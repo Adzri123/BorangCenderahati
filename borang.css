@@ -1,0 +1,96 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .navbar {
+        background-color: #552dab;
+        overflow: hidden;
+        padding: 10px 20px;
+    }
+    .navbar a {
+        float: right;
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 10px 16px;
+    }
+    .navbar a:hover {
+        background-color: #603bb1;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .section-title {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      text-align: left;
+    }
+    .container {
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 5px;
+      vertical-align: top;
+    }
+    .no-border td {
+      border: none;
+    }
+    input[type="text"], input[type="date"], input[type="number"], input[type="tel"] {
+      width: 100%;
+      border: none;
+      font-size: 14px;
+    }
+    .note {
+      font-size: 12px;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: 15px;
+      border: 2px solid black;
+    }
+    .tdpemohonwidth {
+      width: 30%;
+    }
+    .highlight-row {
+      background-color: #000;
+      color: #fff;
+      text-align: left;
+      padding: 10px;
+      font-weight: bold;
+    }
+    .error-msg {
+      color: red;
+      font-size: 12px;
+      display: block;
+      margin-top: 2px;
+    }
+    input.error {
+      border: 1px solid red;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .print-btn:hover, .back-btn:hover {
+      background-color: #4a23a1;
+    }
