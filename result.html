@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Maklumat Permohonan Cenderahati</title>
+  <link rel="stylesheet" href="borang.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://cdn.freebiesupply.com/logos/large/2x/uitm-universiti-teknologi-mara-logo-svg-vector.svg" style="align-items:left;height: auto; width: 90px;;;">
+        <a href="index.html">About Me</a>
+        <a href="borang_cenderahati.html">Form</a>
+    </div>
+<div class="container">
+  <table>
+  <tr><th colspan="2" class="section-header">Maklumat Pemohon</th></tr>
+  <tr><td>Nama Pemohon</td><td><?= htmlspecialchars($_POST["namaPemohon"] ?? '') ?></td></tr>
+  <tr><td>No. Pekerja / Pelajar</td><td><?= htmlspecialchars($_POST["noPekerja"] ?? '') ?></td></tr>
+  <tr><td>Bahagian / Pusat / Unit / Kolej</td><td><?= htmlspecialchars($_POST["bahagian"] ?? '') ?></td></tr>
+  <tr><td>No. Telefon</td><td><?= htmlspecialchars($_POST["telefon"] ?? '') ?></td></tr>
+
+  <tr><th colspan="2" class="section-header">Maklumat Permohonan</th></tr>
+  <tr><td>Program / Majlis</td><td><?= htmlspecialchars($_POST["program"] ?? '') ?></td></tr>
+  <tr><td>Tarikh</td><td><?= htmlspecialchars($_POST["tarikh"] ?? '') ?></td></tr>
+  <tr><td>Tempat</td><td><?= htmlspecialchars($_POST["tempat"] ?? '') ?></td></tr>
+
+  <tr><th colspan="2" class="section-header">Senarai Cenderahati / Alatulis</th></tr>
+  <tr><th>Jenis</th><th>Unit Dipohon</th></tr>
+  <tr><td>Plaque BHEP</td><td><?= (int)($_POST["plaque"] ?? 0) ?></td></tr>
+  <tr><td>Key Chain</td><td><?= (int)($_POST["keychain"] ?? 0) ?></td></tr>
+  <tr><td>Pen</td><td><?= (int)($_POST["pen"] ?? 0) ?></td></tr>
+  <tr><td>Buku Nota</td><td><?= (int)($_POST["notebook"] ?? 0) ?></td></tr>
+</table>
+
+<div class="button-container">
+    <button onclick="window.location.href='borang_cenderahati.php'">Kembali ke Borang</button>
+    <button onclick="window.print()">Cetak</button>
+</div>
+
+</div>
+</body>
+</html>
